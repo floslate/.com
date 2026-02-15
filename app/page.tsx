@@ -1,29 +1,24 @@
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button-variants";
+import { BlogList } from "@/components/blog-list";
+import { AppGrid } from "@/components/app-grid";
+
+export const revalidate = 60;
 
 export default function Page() {
     return (
-        <div className="flex flex-col items-center justify-center min-h-[calc(100vh-14rem)] gap-8 p-8 text-center">
-            <h1 className="text-4xl font-bold tracking-tight">Welcome to prophecy.vision</h1>
-            <p className="text-muted-foreground text-lg max-w-2xl">
-                Select a destination to get started.
-            </p>
-            <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-                <Link href="/applications" className={buttonVariants({ variant: "outline", size: "lg" })}>
-                    Applications
-                </Link>
-                <Link href="/blog" className={buttonVariants({ variant: "outline", size: "lg" })}>
-                    Blog
-                </Link>
-                <Link href="/dashboard" className={buttonVariants({ variant: "default", size: "lg" })}>
-                    Dashboard
-                </Link>
-                <Link href="/roadmaps" className={buttonVariants({ variant: "outline", size: "lg" })}>
-                    Roadmaps
-                </Link>
-                <Link href="/stacks" className={buttonVariants({ variant: "outline", size: "lg" })}>
-                    Stacks
-                </Link>
+        <div className="flex flex-col min-h-[calc(100vh-14rem)] ">
+
+
+            <div className="flex flex-col flex-1">
+                <div className="p-6 border-b border-white/10">
+                    <h2 className="text-2xl font-bold mb-4">Applications</h2>
+                    <AppGrid />
+                </div>
+                <div className="p-6 border-b border-white/10">
+                    <h2 className="text-2xl font-bold">Latest Posts</h2>
+                </div>
+                <BlogList />
             </div>
         </div>
     );

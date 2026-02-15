@@ -13,6 +13,7 @@ import {
     BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import React from "react";
+import { PowerIcon } from "@phosphor-icons/react";
 
 export function Header() {
     const pathname = usePathname();
@@ -25,8 +26,8 @@ export function Header() {
                     <Breadcrumb>
                         <BreadcrumbList>
                             <BreadcrumbItem>
-                                <BreadcrumbLink href="/" className="font-bold text-foreground text-base">
-                                    prophecy.vision
+                                <BreadcrumbLink href="/" className="font-bold flex gap-1 text-foreground text-base">
+                                    <PowerIcon weight="bold" className="h-5 w-5 mt-[2px]" /> floslate
                                 </BreadcrumbLink>
                             </BreadcrumbItem>
                             {segments.map((segment, index) => {
@@ -53,6 +54,9 @@ export function Header() {
                 <div className="flex items-center space-x-2">
                     <Link href="/blog" className={cn(buttonVariants({ variant: "ghost" }))}>
                         BLOG
+                    </Link>
+                    <Link href="/applications" className={cn(buttonVariants({ variant: "ghost" }))}>
+                        APPLICATIONS
                     </Link>
                     <Link href="/contact" className={cn(buttonVariants({ variant: "ghost" }))}>
                         CONTACT

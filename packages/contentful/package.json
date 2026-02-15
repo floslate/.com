@@ -1,0 +1,14 @@
+{
+    "name": "@prophecy/contentful",
+    "version": "0.0.0",
+    "main": "src/index.ts",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "contentful": "^11.0.0"
+    },
+    "devDependencies": {
+        "typescript": "^5.0.0"
+    }
+}

@@ -1,4 +1,9 @@
-# Todo
+# prophecy.vision
+
+Purpose - A Organization that is a parent company to the apps we work on, this acts as a portfolio of work, a blog, a place to showcase learnings, ideas and reflections. Blog
+should contain approaches of builds and what works and what does not work.
+
+Dieter rams in feel
 
 Follow stack:
 

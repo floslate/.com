@@ -18,7 +18,7 @@ export function AppIcon({ title, iconUrl, href, className }: AppIconProps) {
                 className
             )}
         >
-            <div className="relative w-[68px] h-[68px] flex-none order-0 grow-0 z-0">
+            <div className="relative w-[98px] h-[98px] flex-none order-0 grow-0 z-0">
                 <Image
                     src={iconUrl}
                     alt={title}

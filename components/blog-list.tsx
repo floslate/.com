@@ -44,12 +44,12 @@ export async function BlogList() {
                         href={`/blog/${blog.fields.slug}`}
                         className="group block"
                     >
-                        <Item className="bg-transparent border-b border-white/10 p-6 hover:bg-white/5 transition-colors cursor-pointer rounded-none">
+                        <Item className="bg-transparent border-b border-border p-6 hover:bg-muted/50 transition-colors cursor-pointer rounded-none">
                             <ItemContent>
-                                <ItemTitle className="text-xl font-semibold text-white group-hover:text-blue-400 transition-colors">
+                                <ItemTitle className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors">
                                     {blog.fields.title}
                                 </ItemTitle>
-                                <ItemDescription className="text-zinc-500 mt-2">
+                                <ItemDescription className="text-muted-foreground mt-2">
                                     {new Date(blog.sys.createdAt).toLocaleDateString()}
                                 </ItemDescription>
                             </ItemContent>

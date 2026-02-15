@@ -1,7 +1,7 @@
 import { contentfulClient } from "@prophecy/contentful";
 import { EntrySkeletonType } from "contentful";
 import { Document } from "@contentful/rich-text-types";
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import { RichText } from "@/components/rich-text";
 import { notFound } from "next/navigation";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
@@ -60,7 +60,7 @@ export default async function BlogPostPage({
 
             <ScrollArea className="flex-1">
                 <div className="p-6 max-w-3xl mx-auto prose prose-invert">
-                    {documentToReactComponents(blogPost.fields.blogContent)}
+                    <RichText document={blogPost.fields.blogContent} />
                 </div>
             </ScrollArea>
         </div>

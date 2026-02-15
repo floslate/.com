@@ -1,7 +1,7 @@
 import { contentfulClient } from "@prophecy/contentful";
 import { EntrySkeletonType, Asset } from "contentful";
 import { Document } from "@contentful/rich-text-types";
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import { RichText } from "@/components/rich-text";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
@@ -74,7 +74,7 @@ export default async function ApplicationDetailPage({
 
             <div className="prose prose-invert max-w-2xl w-full">
                 {hasDescription ? (
-                    documentToReactComponents(application.fields.descriptionOfApplication!)
+                    <RichText document={application.fields.descriptionOfApplication} />
                 ) : (
                     <p className="text-muted-foreground text-center">No description available.</p>
                 )}

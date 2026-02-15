@@ -21,7 +21,7 @@ export function Header() {
 
     return (
         <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 shrink-0">
-            <div className="container flex h-14 items-center justify-between px-4">
+            <div className="flex h-14 items-center justify-between px-4">
                 <div className="mr-4 flex items-center">
                     <Breadcrumb>
                         <BreadcrumbList>
@@ -58,7 +58,7 @@ export function Header() {
                     <Link href="/applications" className={cn(buttonVariants({ variant: "ghost" }))}>
                         APPLICATIONS
                     </Link>
-                    <Link href="/contact" className={cn(buttonVariants({ variant: "ghost" }))}>
+                    <Link href="mailto:hey.charlotte@icloud.com" className={cn(buttonVariants({ variant: "ghost" }))}>
                         CONTACT
                     </Link>
                 </div>

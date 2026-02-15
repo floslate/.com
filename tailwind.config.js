@@ -6,4 +6,5 @@ module.exports = {
     "./app/**/*.{ts,tsx}",
     "./@/**/*.{ts,tsx}",
   ],
+  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
 };

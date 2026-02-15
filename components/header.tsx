@@ -13,6 +13,7 @@ import {
     BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import React from "react";
+import { PowerIcon } from "@phosphor-icons/react";
 
 export function Header() {
     const pathname = usePathname();
@@ -20,13 +21,13 @@ export function Header() {
 
     return (
         <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 shrink-0">
-            <div className="container flex h-14 items-center justify-between px-4">
+            <div className="flex h-14 items-center justify-between px-4">
                 <div className="mr-4 flex items-center">
                     <Breadcrumb>
                         <BreadcrumbList>
                             <BreadcrumbItem>
-                                <BreadcrumbLink href="/" className="font-bold text-foreground text-base">
-                                    prophecy.vision
+                                <BreadcrumbLink href="/" className="font-bold flex gap-1 text-foreground text-base">
+                                    <PowerIcon weight="bold" className="h-5 w-5 mt-[2px]" /> floslate
                                 </BreadcrumbLink>
                             </BreadcrumbItem>
                             {segments.map((segment, index) => {
@@ -54,7 +55,10 @@ export function Header() {
                     <Link href="/blog" className={cn(buttonVariants({ variant: "ghost" }))}>
                         BLOG
                     </Link>
-                    <Link href="/contact" className={cn(buttonVariants({ variant: "ghost" }))}>
+                    <Link href="/applications" className={cn(buttonVariants({ variant: "ghost" }))}>
+                        APPLICATIONS
+                    </Link>
+                    <Link href="mailto:hey.charlotte@icloud.com" className={cn(buttonVariants({ variant: "ghost" }))}>
                         CONTACT
                     </Link>
                 </div>

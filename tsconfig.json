@@ -19,7 +19,8 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@prophecy/contentful": ["./packages/contentful/src/index.ts"]
     }
   },
   "include": [

@@ -33,19 +33,16 @@ export default function RootLayout({
         </main>
 
         <footer className="sticky bottom-0 z-50 border-t bg-muted/50 backdrop-blur supports-[backdrop-filter]:bg-muted/60 shrink-0">
-          <div className="container mx-auto p-4">
-            <div className="grid  grid-flow-col gap-4 justify-start items-start">
+          <div className="container  p-4">
+            <div className="grid  grid-flow-col gap-4 text-xs uppercase justify-start items-start">
 
               <a href="https://github.com/prophecyAPPs" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-muted-foreground hover:text-foreground">
-                <GithubLogo className="h-5 w-5" />
                 <span>Github</span>
               </a>
               <a href="mailto:hey.charlotte@icloud.com" className="flex items-center gap-2 text-muted-foreground hover:text-foreground">
-                <Envelope className="h-5 w-5" />
                 <span>Email</span>
               </a>
               <a href="https://www.linkedin.com/in/charlotte-bondarev-4962a5264/" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-muted-foreground hover:text-foreground">
-                <LinkedinLogo className="h-5 w-5" />
                 <span>LinkedIn</span>
               </a>
             </div>
